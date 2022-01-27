@@ -233,7 +233,7 @@ home_text_pm = f"""Hello ,
 My name is {BOT_NAME}.
 A Telegram Music+Video Streaming bot with some useful features.
 
-All commands can be used with: / """
+All commands can be used with: [/](https://telegra.ph/file/b49b29ee8eb85e9045e0e.jpg) """
 
 
 @app.on_message(filters.command("help") & filters.private)
@@ -377,7 +377,7 @@ async def help_parser(name, keyboard=None):
 
 Click on the buttons for more information.
 
-All commands can be used with: /
+All commands can be used with: [/](https://telegra.ph/file/b49b29ee8eb85e9045e0e.jpg)
 """.format(
             first_name=name
         ),
