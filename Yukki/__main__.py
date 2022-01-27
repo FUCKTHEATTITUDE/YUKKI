@@ -229,11 +229,11 @@ async def initiate_bot():
     console.print(f"\n[red]Stopping Bot")
 
 
-home_text_pm = f"""Hello ,
-My name is {BOT_NAME}.
-A Telegram Music+Video Streaming bot with some useful features.
-
-All commands can be used with: [/](https://telegra.ph/file/b49b29ee8eb85e9045e0e.jpg) """
+home_text_pm = f"""𝙃𝙚𝙡𝙡𝙤,
+𝙈𝙮 𝙣𝙖𝙢𝙚 𝙞𝙨 {BOT_NAME}.
+𝘼 𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢 𝙈𝙪𝙨𝙞𝙘+𝙑𝙞𝙙𝙚𝙤 𝙎𝙩𝙧𝙚𝙖𝙢𝙞𝙣𝙜 𝙗𝙤𝙩 𝙬𝙞𝙩𝙝 𝙨𝙤𝙢𝙚 𝙪𝙨𝙚𝙛𝙪𝙡 𝙛𝙚𝙖𝙩𝙪𝙧𝙚𝙨.
+💟 𝙏𝙃𝙄𝙎 𝘽𝙊𝙏 𝙄𝙎 𝙈𝘼𝘿𝙀 𝙒𝙄𝙏𝙃 𝙇𝙊𝙑𝙀
+𝘼𝙡𝙡 𝙘𝙤𝙢𝙢𝙖𝙣𝙙𝙨 𝙘𝙖𝙣 𝙗𝙚 𝙪𝙨𝙚𝙙 𝙬𝙞𝙩𝙝 [/](https://telegra.ph/file/b49b29ee8eb85e9045e0e.jpg) """
 
 
 @app.on_message(filters.command("help") & filters.private)
@@ -373,11 +373,11 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-        """Hello {first_name},
-
-Click on the buttons for more information.
-
-All commands can be used with: [/](https://telegra.ph/file/b49b29ee8eb85e9045e0e.jpg)
+        """𝙃𝙚𝙡𝙡𝙤,
+𝙈𝙮 𝙣𝙖𝙢𝙚 𝙞𝙨 {first_name}.
+𝘼 𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢 𝙈𝙪𝙨𝙞𝙘+𝙑𝙞𝙙𝙚𝙤 𝙎𝙩𝙧𝙚𝙖𝙢𝙞𝙣𝙜 𝙗𝙤𝙩 𝙬𝙞𝙩𝙝 𝙨𝙤𝙢𝙚 𝙪𝙨𝙚𝙛𝙪𝙡 𝙛𝙚𝙖𝙩𝙪𝙧𝙚𝙨.
+💟 𝙏𝙃𝙄𝙎 𝘽𝙊𝙏 𝙄𝙎 𝙈𝘼𝘿𝙀 𝙒𝙄𝙏𝙃 𝙇𝙊𝙑𝙀
+𝘼𝙡𝙡 𝙘𝙤𝙢𝙢𝙖𝙣𝙙𝙨 𝙘𝙖𝙣 𝙗𝙚 𝙪𝙨𝙚𝙙 𝙬𝙞𝙩𝙝 [/](https://telegra.ph/file/b49b29ee8eb85e9045e0e.jpg)
 """.format(
             first_name=name
         ),
