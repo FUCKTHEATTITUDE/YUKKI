@@ -101,7 +101,7 @@ async def useradd(_, message: Message):
     await asyncio.gather(
         message.delete(),
         message.reply_text(
-            f"Thanks for having me in {message.chat.title}.\n{MUSIC_BOT_NAME} is alive.\n\nFor any assistance or help, checkout our support group and channel.",
+            f"𝗧𝗵𝗮𝗻𝗸𝘀 𝗳𝗼𝗿 𝗵𝗮𝘃𝗶𝗻𝗴 𝗺𝗲 𝗶𝗻  {message.chat.title}.\n{MUSIC_BOT_NAME} 𝗶𝘀 𝗮𝗹𝗶𝘃𝗲.\n\n𝗻𝗙𝗼𝗿 𝗮𝗻𝘆 𝗮𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝗰𝗲 𝗼𝗿 𝗵𝗲𝗹𝗽, 𝗰𝗵𝗲𝗰𝗸𝗼𝘂𝘁 𝗼𝘂𝗿 𝘀𝘂𝗽𝗽𝗼𝗿𝘁 𝗴𝗿𝗼𝘂𝗽 𝗮𝗻𝗱 [𝗰𝗵𝗮𝗻𝗻𝗲𝗹](https://telegra.ph/file/3a402f6890019234b6830.jpg).",
             reply_markup=InlineKeyboardMarkup(out[1]),
         ),
     )
